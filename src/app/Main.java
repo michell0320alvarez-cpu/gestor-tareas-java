@@ -30,6 +30,52 @@ public class Main {
                     System.out.println("\n🔨 Funcionalidad 'Listar tareas' en desarrollo...");
                     break;
                 case 3:
+                    // TODO: Implementar por Miembro 3
+                    System.out.println("\n🔨 Funcionalidad 'Marcar completada' en desarrollo...");
+                    break;
+                case 4:
+                    // TODO: Implementar por Miembro 4
+                    System.out.println("\n🔨 Funcionalidad 'Eliminar tarea' en desarrollo...");
+                    break;
+                case 5:
+                    System.out.println("\n💾 Guardando tareas...");
+                    gestor.guardarEnArchivo();
+                    System.out.println("👋 ¡Hasta luego!");
+                    salir = true;
+                    break;
+                default:
+                    System.out.println("❌ Opción inválida. Intenta de nuevo.");
+            }
+        }
+        scanner.close();
+    }
+    /**
+     * Muestra el menú principal en pantalla.
+     */
+    private static void mostrarMenu() {
+        System.out.println("\n════════════ MENÚ ════════════");
+        System.out.println("1. ➕ Agregar tarea");
+        System.out.println("2. 📄 Listar tareas");
+        System.out.println("3. ✔️ Marcar como completada");
+        System.out.println("4. 🗑️ Eliminar tarea");
+        System.out.println("5. 🚪 Salir");
+        System.out.println("══════════════════════════════");
+        System.out.print("Selecciona una opción: ");
+    }
+    /**
+     * Lee y valida la opción del menú ingresada por el usuario.
+     */
+    private static int leerOpcion() {
+        try {
+            int opcion = Integer.parseInt(scanner.nextLine());
+            return opcion;
+        } catch (NumberFormatException e) {
+            return -1; // Opción inválida
+        }
+    }
+}
+
+
 
 
 
