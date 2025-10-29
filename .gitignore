@@ -1,0 +1,27 @@
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+# IDEs
+.idea/
+*.iml
+.vscode/
+.eclipse/
+.project
+.classpath
+.settings/
+# Directorios de compilación
+bin/
+out/
+build/
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+# Archivos de datos (opcional - comentar si quieren versionar tareas.txt)
+# tareas.txt gi
